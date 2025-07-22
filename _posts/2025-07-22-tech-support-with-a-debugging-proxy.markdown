@@ -41,3 +41,13 @@ If the proxy setup was succesful, this will show you a webpage with instructions
 You can also set Postman to use the debugging proxy, so you can easily record and examine requests.
 
 ![Image]({{site.url}}{{site.baseurl}}\images\2025-07-22-tech-support-with-a-debugging-proxy\dc82ce12-f858-4bea-9ae5-caa12416f4ee.png)
+
+## Extracting a HAR (HTTP ARchive) recording
+
+mitmproxy has a feature to save your requests to a HAR file for sharing and further troubleshooting by a third party. Just make sure to strip any sensitive information.
+
+You can use something like the following command to save the requests to a HAR file:
+
+`:save.har @all har-file-name.har`
+
+![Image]({{site.url}}{{site.baseurl}}\images\2025-07-22-tech-support-with-a-debugging-proxy\7c3f88ee-75a9-4553-9fd0-232d30bdd91d.png)
